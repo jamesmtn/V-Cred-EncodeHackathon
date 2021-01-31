@@ -1,0 +1,551 @@
+{
+  "contractName": "IBEP20FlashBorrower",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "debt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "token1",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "token2",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "token3",
+          "type": "string"
+        }
+      ],
+      "name": "executeOnBEP20FlashLoan",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"debt\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"token1\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"token2\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"token3\",\"type\":\"string\"}],\"name\":\"executeOnBEP20FlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/VijayL/Documents/Blockchain/MyProjects/Encode_Club_hackathon/BSC/contracts/IBEP20FlashBorrower.sol\":\"IBEP20FlashBorrower\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/VijayL/Documents/Blockchain/MyProjects/Encode_Club_hackathon/BSC/contracts/IBEP20FlashBorrower.sol\":{\"keccak256\":\"0x592a9f99eae0a9a36f480e28425c1cf70f62b3468447f3f81b504f2a13ca3d39\",\"urls\":[\"bzz-raw://48af3c4e92e8a5edccf77693001252a4ec71d40690076e0468616b61b0545ee1\",\"dweb:/ipfs/QmRp1NjjbtWt37bN8M7DyHBCNiXEN6eNT7wMjuiU9xryFy\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.6.6;\n\ninterface IBEP20FlashBorrower {\n    function executeOnBEP20FlashLoan(address token, uint256 amount, uint256 debt,string memory token1, string memory token2, string memory token3) external;\n}",
+  "sourcePath": "/Users/VijayL/Documents/Blockchain/MyProjects/Encode_Club_hackathon/BSC/contracts/IBEP20FlashBorrower.sol",
+  "ast": {
+    "absolutePath": "/Users/VijayL/Documents/Blockchain/MyProjects/Encode_Club_hackathon/BSC/contracts/IBEP20FlashBorrower.sol",
+    "exportedSymbols": {
+      "IBEP20FlashBorrower": [
+        262
+      ]
+    },
+    "id": 263,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 246,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 262,
+        "linearizedBaseContracts": [
+          262
+        ],
+        "name": "IBEP20FlashBorrower",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "524bc360",
+            "id": 261,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "executeOnBEP20FlashLoan",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 259,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 248,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "94:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 247,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "94:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 250,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "109:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 249,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 252,
+                  "mutability": "mutable",
+                  "name": "debt",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "125:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 251,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "125:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 254,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "138:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 253,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "138:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 256,
+                  "mutability": "mutable",
+                  "name": "token2",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "160:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 255,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "160:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 258,
+                  "mutability": "mutable",
+                  "name": "token3",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "182:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 257,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "93:110:2"
+            },
+            "returnParameters": {
+              "id": 260,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "212:0:2"
+            },
+            "scope": 262,
+            "src": "61:152:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 263,
+        "src": "25:190:2"
+      }
+    ],
+    "src": "0:215:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/VijayL/Documents/Blockchain/MyProjects/Encode_Club_hackathon/BSC/contracts/IBEP20FlashBorrower.sol",
+    "exportedSymbols": {
+      "IBEP20FlashBorrower": [
+        262
+      ]
+    },
+    "id": 263,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 246,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 262,
+        "linearizedBaseContracts": [
+          262
+        ],
+        "name": "IBEP20FlashBorrower",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "524bc360",
+            "id": 261,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "executeOnBEP20FlashLoan",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 259,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 248,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "94:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 247,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "94:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 250,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "109:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 249,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 252,
+                  "mutability": "mutable",
+                  "name": "debt",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "125:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 251,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "125:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 254,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "138:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 253,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "138:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 256,
+                  "mutability": "mutable",
+                  "name": "token2",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "160:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 255,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "160:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 258,
+                  "mutability": "mutable",
+                  "name": "token3",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 261,
+                  "src": "182:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 257,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "93:110:2"
+            },
+            "returnParameters": {
+              "id": 260,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "212:0:2"
+            },
+            "scope": 262,
+            "src": "61:152:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 263,
+        "src": "25:190:2"
+      }
+    ],
+    "src": "0:215:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-01-28T21:10:20.141Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
